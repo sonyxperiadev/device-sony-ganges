@@ -87,9 +87,6 @@ TARGET_USES_GRALLOC1 := true
 # Treble
 BOARD_VNDK_VERSION := current
 
-# Keymaster 4
-TARGET_KEYMASTER_V4 := true
-
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_VENDORIMAGE_PARTITION_SIZE := 891289600

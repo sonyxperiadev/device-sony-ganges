@@ -34,6 +34,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 AB_OTA_UPDATER := true
 TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
 
+# Disable enforcement of "compatible" properties until all props are fixed
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := false
+
 PRODUCT_SHIPPING_API_LEVEL := 27
 
 # A/B OTA dexopt package

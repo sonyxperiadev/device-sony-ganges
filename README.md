@@ -1,12 +1,17 @@
+Ganges platform
+===============
 Copyright (C) Sony Mobile Communications 2019
-=============================================
+---------------------------------------------
 
-This is the Android device configuration for ganges platform.
+Android device configuration for the ganges platform (**SDM630/636**).
 
-ganges devices:
+### Supported devices:
 
-    Xperia 10 ....................... Kirin
-    Xperia 10 Plus .................. Mermaid
+| Device | Codename | SoC |
+|-|:-:|-|
+| Xperia 10 | [kirin](https://github.com/sonyxperiadev/device-sony-kirin) | SDM630 |
+| Xperia 10 Plus | [mermaid](https://github.com/sonyxperiadev/device-sony-mermaid) | SDM636 |
 
-Build instructions
+### Build instructions
+
 https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/

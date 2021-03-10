@@ -77,7 +77,7 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 # Keymaster 4
 TARGET_KEYMASTER_V4 := true
 
-# VPP
+# Qualcomm VPP (Only relevant to proprietary build)
 TARGET_DISABLE_QTI_VPP := true
 
 # Overlay

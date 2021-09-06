@@ -87,6 +87,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Graphics allocator/mapper v3
 TARGET_HARDWARE_GRAPHICS_V3 := true
 
+# Sscrpcd
+TARGET_NEEDS_SSCRPCD := true
+
 # A/B support
 AB_OTA_UPDATER := true
 

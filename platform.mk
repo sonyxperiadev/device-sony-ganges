@@ -68,9 +68,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USES_DRM_PP := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
-# Keymaster 4
-TARGET_KEYMASTER_V4 := true
-
 # VPP
 TARGET_DISABLE_QTI_VPP := true
 
@@ -190,6 +187,17 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660
+
+# Keymaster 4 passthrough service init file
+# (executable is on odm)
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service-qti.rc \
+    android.hardware.keymaster@4.1.vendor
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.keymaster.version=v4
+
+DEVICE_MANIFEST_FILE += $(PLATFORM_COMMON_PATH)/vintf/android.hw.keymaster_v4.xml
 
 # GPS
 PRODUCT_PACKAGES += \
